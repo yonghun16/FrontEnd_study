@@ -11,4 +11,3 @@ int solution(int a[], size_t a_len, int b[], size_t b_len) {
         }
     return answer;
 }
-
