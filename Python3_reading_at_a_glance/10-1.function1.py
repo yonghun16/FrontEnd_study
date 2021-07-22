@@ -40,9 +40,10 @@ print(recArea(10, 20))
 print()
 
 
-# 가변 인자 함수는 매개변수 앞에 *만 입력한다.
-# 가변 인자 함수 = 인자의 개수가 제한이 없음
-# 가변 인자 함수 = 튜플로 자료형이 고정
+# 가변 인자 매개변수
+# - 매개변수 앞에 *만 입력한다.
+# - 가변 인자 매개변수 = 인자의 개수가 제한이 없음
+# - 가변 인자 매개변수 = 튜플로 자료형이 고정
 def subNums(*t):
     print(t, type(t))
     total = 0
@@ -75,3 +76,17 @@ def calNums(ch, *t):
 
 choice = input("덧셈은 sum, 곱셈은 mul를 입력하세요:")
 print(calNums(choice, 1, 2, 3, 2, 5, 3, 2))
+
+
+# 키워드 매개변수
+# - 매개변수를 key:value 식으로 받을 수 있다.
+# - key는 따옴표를 감싸지 않는다.
+# - 가변인자 매개변수랑 같이 쓸 수 있다.
+
+def func(*nums, **kwargs):
+    print(nums)
+    print(kwargs)
+
+
+num = 10
+func(1, 3, 2, 4, apple="사과", a=num, num=4)
