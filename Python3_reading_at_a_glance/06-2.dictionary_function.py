@@ -5,7 +5,7 @@
 # x.clear()   -> 딕셔너리의 모든 값을 삭제(del 키워드는 객체 자체를 삭제)
 # x.get(key)  -> x[key]와 마찬가지로 해당 key의 value 반환
 # key in x    -> key값이 x딕셔너리에 존재하는지 판별하는 키워드는
-mem = {"김구름":25, "박에듀":23, "온라인":24}
+mem = {"김구름": 25, "박에듀": 23, "온라인": 24}
 print(mem.keys())
 names = list(mem.keys())  # 새로운 리스트 변수에 초기화
 names.append("윤레벨")

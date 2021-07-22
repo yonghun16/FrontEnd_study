@@ -9,7 +9,7 @@ t3 = "goorm", 'b', "hello", 1, 2, 3  # 괄호 생략 가능
 print(t3, t3[2])
 
 s1 = list(set([1, 2, 3]))
-t4 = ([1, 2, 3], {"사과":"apple", "포도":"grape"}, ('a', 'b', 'c'), s1)
+t4 = ([1, 2, 3], {"사과": "apple", "포도": "grape"}, ('a', 'b', 'c'), s1)
 print(t4, t4[1])
 
 t4[3][2] = "edit"  # 중요 : 튜플 요소가 Mutable하면 수정 가능
