@@ -28,6 +28,8 @@ stdlist.append(stdInfo(stdrrn))
 print(stdlist[0])
 print()
 
+print()
+
 
 # 매개변수
 def recArea(a, b):
