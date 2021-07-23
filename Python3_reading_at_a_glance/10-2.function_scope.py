@@ -33,14 +33,14 @@ def plusNum():
     global num   # 전역변수를 함수 내에서 사용함을 선언
     num += 1
     print("함수 내에서 num = ", num)
-    
+
 
 plusNum()
 print("함수 밖에서 num = ", num)
 
 
 # - global 미사용 (추천)
-num = 1 #전역변수 선언
+num = 1  # 전역변수 선언
 
 
 def plusNum(a):

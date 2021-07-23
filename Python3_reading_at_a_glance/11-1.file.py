@@ -1,7 +1,7 @@
 # 파일
 # - 간단 사용법
 f = open("test.txt", 'w')
-for i in range(1, 11) :
+for i in range(1, 11):
     sentence = "%d번째 줄입니다.\n" % i
     f.write(sentence)
 f.close()
@@ -24,9 +24,10 @@ print(data)
 a.close()
 
 a = open("test.txt", 'r')
-while 1 :
+while 1:
     line = a.readline()
-    if not line : break  # line이 None이 되면(=false) 반복문 탈출
+    if not line:
+        break  # line이 None이 되면(=false) 반복문 탈출
     print(line)
 a.close()
 
@@ -39,8 +40,8 @@ f.write(data)
 f.close()
 
 f = open("test2.txt", 'a')
-for i in range(2, 5) :
-    data = "%d번째 줄입니다.\n"  % i
+for i in range(2, 5):
+    data = "%d번째 줄입니다.\n" % i
     f.write(data)
 f.close()
 
