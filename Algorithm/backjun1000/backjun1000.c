@@ -1,4 +1,4 @@
-// https://www.acmicpc.net/problem/1000
+//  https://www.acmicpc.net/problem/1000
 
 #include <stdio.h>
 
