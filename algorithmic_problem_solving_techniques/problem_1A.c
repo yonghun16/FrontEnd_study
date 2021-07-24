@@ -7,6 +7,7 @@
  * * @param b
  * * @return a와 b중 더 큰 값
  * */
+
 int getMax(int a, int b)
 {
     if(a > b){
