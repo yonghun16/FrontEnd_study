@@ -27,6 +27,22 @@ console.log();
 
 
 // 생성자 함수
+/*
+const circle1 = {
+    radius: 5,
+    getDiameter() {
+        return 2 * this.radius;
+    },
+};
+
+const circle2 = {
+    radius: 10,
+    getDiameter() {
+        return 2 * this.radius;
+    },
+};
+// 다수의 객체를 생성시 중복이 발생
+*/
 console.log(" 생성자 함수");
 function Circle(radius) {
     this.radius = radius;
