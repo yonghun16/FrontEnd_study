@@ -10,10 +10,9 @@ def get_max(data, n):
     return answer
 
 
-if __name__ == "__main__":
-    n = int(input())
+n = int(input())
 
-    data = [int(word) for word in input().split()]
+data = [int(word) for word in input().split()]
 
-    answer = get_max(data, n)
-    print(answer)
+answer = get_max(data, n)
+print(answer)
