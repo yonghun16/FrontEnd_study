@@ -1,3 +1,4 @@
+# https://edu.goorm.io/learn/lecture/554/알고리즘-문제해결기법-입문/lesson/22884/문제1c-카운팅하기 
 # -*- coding: utf-8 -*-
 # UTF-8 encoding when using korean
 
