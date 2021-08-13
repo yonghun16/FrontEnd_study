@@ -16,3 +16,28 @@ function sum(){
     return _sum;
 }
 console.log('result : ' + sum(1,2,3,4));
+console.log();
+
+
+// 예제 - 매개변수의 활용
+function zero(){
+    console.log(
+        'zero.length', zero.length,
+        'arguments', arguments.length
+    );
+}
+function one(arg1){         // length 1
+    console.log(
+        'one.length', one.length,
+        'arguments', arguments.length
+    );
+}
+function two(arg1, arg2){   // length 2
+    console.log(
+        'two.length', two.length,
+        'arguments', arguments.length
+    );
+}
+zero();               // 
+one('val1', 'val2');  // arguments 2 
+two('val1');          // arguments 1
