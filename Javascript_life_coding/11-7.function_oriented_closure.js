@@ -15,3 +15,31 @@ function outer(){
 }
 var inner = outer();  // outer함수의 소멸 후에도
 inner();              // inner 내부함수가 외부함수인 outer의 변수에 접근할 수 있다.
+
+
+
+// 활용 예제
+// 1개의 외부함수를 사용했지만, ghost와 matrix는 각각 독립된 개체가 된다. 
+// JavaScript는 기본적으로 Private한 속성을 지원하지 않는데, 클로저의 이러한 특성을 이용해서 Private한 속성을 사용할 수 있게된다.
+function factory_movie(title){
+    return {
+        get_title : function (){
+            return title;
+        },
+        set_title : function(_title){
+            title = _title
+        }
+    }
+}
+ghost = factory_movie('Ghost in the shell'); 
+matrix = factory_movie('Matrix');
+ 
+console.log(ghost.get_title());
+console.log(matrix.get_title());
+ 
+ghost.set_title('공각기동대');
+
+console.log();
+console.log(ghost.get_title());
+console.log(matrix.get_title());
+
