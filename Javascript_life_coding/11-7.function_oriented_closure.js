@@ -18,7 +18,7 @@ inner();              // inner 내부함수가 외부함수인 outer의 변수�
 
 
 
-// 활용 예제
+// 예제1 - 활용
 // 1개의 외부함수를 사용했지만, ghost와 matrix는 각각 독립된 개체가 된다. 
 // JavaScript는 기본적으로 Private한 속성을 지원하지 않는데, 클로저의 이러한 특성을 이용해서 Private한 속성을 사용할 수 있게된다.
 function factory_movie(title){
@@ -36,10 +36,25 @@ matrix = factory_movie('Matrix');
  
 console.log(ghost.get_title());
 console.log(matrix.get_title());
- 
+console.log();
+
 ghost.set_title('공각기동대');
 
-console.log();
 console.log(ghost.get_title());
 console.log(matrix.get_title());
+console.log();
+
+
+// 예제2 - 응용
+var arr = []
+for(var i = 0; i < 5; i++){
+	arr[i] = function(id) {  // arr[i] 각각이 객체가 됨.
+		return function(){   // 익명함수의 리턴값이 있어야 각각의 객체를 생성함.
+			return id;
+		}
+    }(i);
+}
+for(var index in arr) {
+    console.log(arr[index]());
+}
 
