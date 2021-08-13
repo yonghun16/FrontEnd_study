@@ -42,7 +42,7 @@ ghost.set_title('공각기동대');
 
 console.log(ghost.get_title());
 console.log(matrix.get_title());
-console.log();
+console.log(); 
 
 
 // 예제2 - 응용
