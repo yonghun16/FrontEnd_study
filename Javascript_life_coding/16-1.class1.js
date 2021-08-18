@@ -28,3 +28,12 @@ class E {
 }
 
 console.log(new E());
+
+class F {
+    constructor(name, age) {
+        console.log('constructor', name, age);
+    }
+}
+
+console.log(new F('Mark'));
+console.log(new F());
