@@ -20,6 +20,7 @@ class B {   // node.js v12 부터
 }
 console.log(new B());
 
+
 class C {
     name = 'no name';
     age = 0;
@@ -31,11 +32,12 @@ class C {
 }
 
 console.log(new C('Mark', 37));
+console.log();
 
 
 // 멤버 함수
 
-class A {
+class D {
     hello1() {
         console.log('hello1', this);
     }
@@ -44,10 +46,10 @@ class A {
     }
 }
 
-new A().hello1();
-new A().hello2();
+new D().hello1();
+new D().hello2();
 
-class B {
+class E {
     name = 'Mark';
 
     hello() {
@@ -55,5 +57,5 @@ class B {
     }
 }
 
-new B().hello();
+new E().hello();
 
