@@ -20,3 +20,4 @@ Promise.resolve(new Promise((resolve, reject) => {
 Promise.resolve('bar').then(data => {
     console.log('then 메서드가 없는 경우', data);
 });
+ 
