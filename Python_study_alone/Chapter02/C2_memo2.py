@@ -8,6 +8,9 @@ print("hello" + "1")
 # *
 print(3 * "hello ")
 
+#indexing
+print("hello"[2])
+
 # slising
 print("Hello"[0:3])
 
