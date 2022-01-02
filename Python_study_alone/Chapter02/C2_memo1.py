@@ -1,3 +1,5 @@
+# 02-1 자료형과 문자열
+
 print("안녕하세요")
 print('안녕하세요')
 
@@ -31,3 +33,23 @@ print("""\
 무궁화 삼천리 화려강산 대한사람
 대한으로 길이 보전하세\
 """)
+
+
+# +
+print("hello " + "sir")
+print("hello" + "!")
+
+#print("hello" + 1)  # error
+print("hello" + "1")
+
+# *
+print(3 * "hello ")
+
+#indexing
+print("hello"[2])
+
+# slising
+print("Hello"[0:3])
+
+# len()
+print(len("hello"))

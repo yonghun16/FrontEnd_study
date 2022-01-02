@@ -1,18 +1,26 @@
-# +
-print("hello " + "sir")
-print("hello" + "!")
+# 02-2 숫자
 
-#print("hello" + 1)  # error
-print("hello" + "1")
+print(273)
+print(53.273)
+print(type(273))
+print(type(53.273))
+print()
 
-# *
-print(3 * "hello ")
+# 사칙연산
+print("5 + 7 = ", 5+7)
+print("5 - 7 = ", 5-7)
+print("5 * 7 = ", 5*7)
+print("5 / 7 = ", 5/7)
+print()
 
-#indexing
-print("hello"[2])
+# 정수 나누기 연산자
+print("3 / 2 =", 3 / 2)
+print("3 // 2 =", 3 // 2)
+print("5 % 2 = ", 5 % 2)
+print()
 
-# slising
-print("Hello"[0:3])
-
-# len()
-print(len("hello"))
+# 제곱 연산자
+print("2 ** 1 = ", 2 ** 1)
+print("2 ** 2 = ", 2 ** 2)
+print("2 ** 3 = ", 2 ** 3)
+print("2 ** 4 = ", 2 ** 4)
