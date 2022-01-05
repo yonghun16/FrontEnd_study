@@ -2,8 +2,8 @@
 
 int main(void)
 {
-    int a = 55;
     int b = 10;
+    int a = 55;
 
     printf("%d - %d = %d\n", a, b, a-b);
 
