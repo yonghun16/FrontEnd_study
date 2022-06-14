@@ -1,0 +1,20 @@
+<!-- switch 조건문을 if 조건문으로 변환하기 -->
+
+<script>
+  //변수 선언
+  const date = new Date()
+  const hour = date.getHours()
+
+  //조건문
+  switch(true) {
+      case hour < 11:
+          alert('아침 먹을 시간입니다.')
+          break
+      case hour < 15:
+          alert('점심 먹을 시간입니다.')
+          break
+      defaut:
+          alert('저녁 먹을 시간입니다.')
+          break
+  }
+</script>
