@@ -1,0 +1,31 @@
+<!-- HTML 코드를 자바스크립트로 조작하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>DOMContentLoaded</title>
+    <script>
+      // HTML 태그를 쉽게 만들 수 있는 콜백 함수를 선언합니다.
+      const h1 = (text) => `<h1>${text}</h1>`
+    </script>
+    <script>
+      document.body.innerHTML += h1('1번째 script 태그')  
+      //body 태그가 생성되기 전에 script 태그로 body 태그를 조작합니다.
+      //앞에서 선언한 h1함수를 실행합니다.
+    </script>
+  </head>
+
+  <body>
+    <script>
+      document.body.innerHTML += h1('2번째 script 태그')
+    </script>
+    <h1>1번째 h1 태그</h1>
+    <script>
+      document.body.innerHTML += h1('3번째 script 태그')
+    </script>
+    <h1>2번째 h2 태그</h1>
+  </body>
+
+</html>
