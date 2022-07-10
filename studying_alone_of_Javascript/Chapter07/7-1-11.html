@@ -1,0 +1,33 @@
+<!-- 이벤트 연결하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>이벤트 연결하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let counter = 0
+      const h1 = document.querySelector('h1')
+
+      h1.addEventListener('click', (event) => {  //h1 태그에 이벤트가 발생할 때 실행할 함수
+        counter++
+        h1.textContent = `클릭 횟수: ${counter}`
+      })
+    })
+  </script>
+
+  <style>
+    h1 {
+      // 클릭을 여러 번 했을 때 클자가 선택되는 것을 막기 위한 스타일
+      user-select: none;
+    }
+  </style>
+
+  <body>
+    <h1> 클릭 횟수: 0</h1>
+  </body>
+</html> 

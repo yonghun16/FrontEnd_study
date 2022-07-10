@@ -1,0 +1,30 @@
+<!-- 문서 객체 생성하고 추가하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>문서 객체 생성하고 추가하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      //문서 객체 생성하기
+      const header = document.createElement('h1')
+
+      //생성한 태그 조작하기
+      header.textContent = '문서 객체 동적으로 생성하기'
+      header.setAttribute('data-custom', '사용자 정의 속성')
+      header.style.color = 'white'
+      header.style.backgroundColor = 'black'
+
+      // h1 태그를 body 태그 아래에 추가하기
+      document.body.appendChild(header)
+    })
+  </script>
+
+  <body>
+
+  </body>
+</html>

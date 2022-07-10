@@ -1,0 +1,28 @@
+<!-- 문서 객체 제거하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>문서 객체 제거하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const h1 = document.querySelector('h1')
+
+        h1.parentNode.removeChild(h1)
+        // h1태그의 부모 객체 body태그에 접근하여 제거합니다.
+        // document.body.removeChild(h1)   // 이런형태도 가능
+      }, 3000)
+    })
+  </script>
+
+  <body>
+    <hr>
+    <h1> 제거 대상 문서 객체 </h1>
+    <hr>
+  </body>
+</html>
