@@ -1,0 +1,32 @@
+<!-- 스타일 조직하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>스타일 조직하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const divs = document.querySelectorAll('body > div')   //body태그 아래에 있는 div태그 선택
+
+      divs.forEach((div, index) => {   // div개수만큼 반복하여 출력합니다.
+        console.log(div, index)
+        const val = index * 10         // 인덱스는 0부터 24까지 반복합니다.
+        div.style.height = `10px`      // 크기를 지정할 때는 반드시 단위를 함께 붙여
+        div.style.backgroundColor = `rgba(${val}, ${val}, ${val})`
+      })
+    }) 
+  </script>
+
+  <body>
+    <!-- div 태그 25개 -->
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+    <div></div><div></div><div></div><div></div><div></div>
+  </body>
+</html>
