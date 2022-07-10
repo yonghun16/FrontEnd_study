@@ -1,0 +1,23 @@
+<!-- 글자 조작하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>글자 조작하기</title>
+  </head>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const a = document.querySelector('#a')
+      const b = document.querySelector('#b')
+
+      a.textContent = '<h1>textContent 속성</h1>'
+      b.innerHTML = '<h1>innerHTML 속성</h1>'
+    })
+  </script>
+  <body>
+    <div id="a"></div>
+    <div id="b"></div>
+  </body>
+</html>
