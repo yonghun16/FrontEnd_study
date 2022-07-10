@@ -1,0 +1,30 @@
+<!-- 속성 조작하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>속성 조작하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const rects = document.querySelectorAll('.rect')   //특정 클래스로 요소를 선택
+
+      rects.forEach((rect, index) => {
+        const width = (index + 1) *100   
+        // index값은 [0, 1, 2, 3]이 반복됩니다. 1을 더해서 [1, 2, 3, 4]가 되게 만들고,
+        // 100을 곱해서 너비가 [100, 200, 300, 400]이 되게 만든 것입니다.
+        const urlSrc = `https://placekitten.com/${width}/250`
+        rect.setAttribute('src', urlSrc)     // src 속성에 값을 지정합니다.
+      })
+    })
+  </script>
+  <body>
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+  </body>
+</html>
