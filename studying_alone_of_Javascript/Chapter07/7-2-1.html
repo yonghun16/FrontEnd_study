@@ -1,0 +1,28 @@
+<!-- 남은 글자 수 출력하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>남은 글자 수 출력하기</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      const textarea = document.querySelector('textarea')
+      const h1 = document.querySelector('h1')
+
+      textarea.addEventListener('keyup', (event) => {
+        const length = textarea.value.length
+        h1.textContent = `글자 수: ${length}`
+      })
+    })
+  </script>
+
+  <body>
+    <h1>글자 수: 0</h1>
+    <textarea></textarea>
+  </body>
+
+</html>
