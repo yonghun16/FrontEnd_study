@@ -1,0 +1,32 @@
+<!-- 키보드 이벤트와 관련된 이벤트 속성 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>키보드 이벤트와 관련된 이벤트 속성</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      const h1 = document.querySelector('h1')
+      const print= (event) => {
+        let output = ''
+        output += `alt: ${event.altKey}<br>`        //이벤트가 발생하면 불 값을 반환
+        output += `ctrl: ${event.ctrlKey}<br>`
+        output += `shift: ${event.shiftKey}<br>`
+        output += `code: ${typeof(event.code) !== 'undefined' ? event.code: event.keyCode}<br>`    //event.code가 있으면 event.code를 출력하고, undefined라면 event.keyCode를 출력합니다.
+        h1.innerHTML = output
+      }
+
+      document.addEventListener('keydown', print)   //키가 눌릴 때 출력합니다.
+      document.addEventListener('keyup', print)     //키가 떨어질 때 출력합니다.
+    })
+  </script>
+
+  <body>
+    <h1></h1>
+  </body>
+
+</html>

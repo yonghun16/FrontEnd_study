@@ -14,7 +14,7 @@
       const h1 = document.querySelector('h1')
 
       textarea.addEventListener('keyup', (event) => {
-        const length = textarea.value.length
+        const length = textarea.value.length    //value 속성으로 입력양식의 글자를 읽어들일 수 있습니다.
         h1.textContent = `글자 수: ${length}`
       })
     })
