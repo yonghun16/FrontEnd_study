@@ -1,0 +1,39 @@
+<!-- multiple select 태그-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>7 2 7</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      const select = document.querySelector('select')
+      const p = document.querySelector('p')
+
+      select.addEventListener('change', (event) => {
+        const options = event.currentTarget.options
+        const list = []
+        for (const option of options) {     //options속성에는 forEach()메소드가 없습니다.
+                                            //따라서 이렇게 반복문으로 돌려야 한다.
+          if (option.selected) {            //selected 속성을 확인한다.
+            list.push(option.textContent)
+          }
+        }
+        p.textContent = `선택: ${list.join(',')}`
+      })
+    })
+  </script>
+
+  <body>
+    <select multiple>
+      <option>떡볶이</option>
+      <option>순대</option>
+      <option>오뎅</option>
+      <option>튀김</option>
+    </select multiple>
+    <p></p>
+  </body>
+</html>
