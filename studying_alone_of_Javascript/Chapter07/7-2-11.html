@@ -1,0 +1,25 @@
+<!--이미지 마우스 오른쪽 버튼 클릭 막기-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>7 2 11</title>
+  </head>
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      const imgs = document.querySelectorAll('img')
+
+      imgs.forEach((img) => {
+        img.addEventListener('contextmenu', (event) => {
+          event.preventDefault()   //컨텍스트 메뉴를 출력하는 기본 이벤트 제거
+        })
+      })
+    })
+  </script>
+
+  <body>
+    <img src="https://placekitten.com/300/300" alt="">
+  </body>
+</html>
