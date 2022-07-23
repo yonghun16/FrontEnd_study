@@ -1,0 +1,35 @@
+<!-- 체크 때만 활성화하기 -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>7 2 12</title>
+  </head>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', ()=> {
+      let status = false
+
+      const checkbox = document.querySelector('input')
+      checkbox.addEventListener('change', (event) => {
+        status = event.currentTarget.checked       // checked 속성을 사용합니다.
+      })
+
+      const link = document.querySelector('a')
+      link.addEventListener('click', (event) => {
+        if (!status) {
+          event.preventDefault()     // status가 false가 아니면 링크의 기본 이벤트 제거
+        }
+      })
+    })
+  </script>
+
+  <body>
+    <input type="checkbox">
+    <span>링크 활성화</span>
+    <br>
+    <a href="https://hanbit.co.kr">한빛미디어</a>
+  </body>
+</html>
